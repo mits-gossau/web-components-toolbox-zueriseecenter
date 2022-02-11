@@ -14,9 +14,15 @@
   </ol>
   <br>
   <h3>Pages</h3>
-  <ul>
-    <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?content=../../../../../src/es/components/pages/Home.html">Home</a></li>
-  </ul>
+  <div id=pages></div>
+  <script>
+    const pageQuery = 'rootFolder=src&css=./src/css/zueriseecenter.css&logo=./src/es/components/web-components-toolbox/src/es/components/atoms/logo/Logo.html&nav=./src/es/components/web-components-toolbox/src/es/components/molecules/navigation/Navigation.html&footer=./src/es/components/web-components-toolbox/src/es/components/organisms/footer/Footer.html'
+    document.querySelector('#pages').innerHTML = /* HTML */`
+      <ul>
+        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Home.html">Home</a></li>
+      </ul>
+    `
+  </script>
   <hr />
   <h3>web-components-toolbox</h3>
   <ul>
