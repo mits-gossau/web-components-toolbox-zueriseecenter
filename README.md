@@ -11,3 +11,4 @@ TODO:
 - [ ] https://www.zueriseecenter.ch/de.html Text
 - [ ] https://www.zueriseecenter.ch/de.html Header and Logo (hidden appear effect)
 - [ ] https://www.zueriseecenter.ch/de.html Nav
+- [ ] Performance test regarding (re)fetch of style.css, reset.css and div. template *.css files, if this is an issue, consider a fetch controller which reacts on custom event with caching
