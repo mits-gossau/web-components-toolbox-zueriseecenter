@@ -6,4 +6,10 @@
  */
  :root {
     --blue: #003a56;
+    --opening-hours-picture-img-width:19.5rem;
+    --opening-hours-picture-transform-hover: scale(1.05,1.05);
+    --opening-hours-picture-transition: transform .5s ease-out;
+    --opening-hours-wrapper-align-items:center;
+    --p-line-height:1.5em;
+    --p-margin:0 0 0.8em;
  }
