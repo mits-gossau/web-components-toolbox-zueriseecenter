@@ -1,16 +1,13 @@
 /**
- * Variables naming rule: --{selector aka component aka namespace}-{css property}-{pseudo class or media query name} eg. --p-background-color-hover 
- * NOTE: Within the component don't use any name spacing eg. component header don't use --header-default-color just use --color the namespace can be added by the Shadow as an html attribute
- * - if a component holds other components or nodes you can declare or remap classes eg. :host > h1 {--color: var(--h1-color, white);}
- * - if a component holds other components you should share the attribute namespace with its children
- */
- :root {
-    --blue: #003a56;
-    --opening-hours-picture-img-width:19.5rem;
-    --opening-hours-picture-transform-hover: scale(1.05,1.05);
-    --opening-hours-picture-transition: transform .5s ease-out;
-    --opening-hours-wrapper-align-items:center;
-    --p-line-height:1.5em;
-    --p-margin:0 0 0.8em;
-    --store-logo-img-width:145px;
- }
+  * Variables naming rule: --{selector aka component aka namespace}-{css property}-{pseudo class or media query name} eg. --p-background-color-hover 
+  * NOTE: Within the component don't use any name spacing eg. component header don't use --header-default-color just use --color the namespace can be added by the Shadow as an html attribute
+  * - if a component holds other components or nodes you can declare or remap classes eg. :host > h1 {--color: var(--h1-color, white);}
+  * - if a component holds other components you should share the attribute namespace with its children
+  */
+:root {
+  --color-hover: #26b4e9;
+  --color-secondary: #003a56;
+  --store-logo-img-width: min(145px, 50vw);
+  --teaser-overlay-bg-color-hover-custom: var(--color-hover);
+  --teaser-overlay-bg-color-custom: var(--color-secondary);
+}

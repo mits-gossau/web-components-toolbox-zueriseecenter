@@ -3,48 +3,24 @@
     </a-picture>
 </a-emotion-pictures>
 
-<o-body-style background-color="var(--blue)" color="var(--m-white)">
-    <o-wrapper any-1-width="25%" namespace="opening-hours-wrapper-">
-        <a-picture namespace="opening-hours-picture-" picture-load
+<o-body-style background-color="var(--color-secondary)" color="var(--m-white)">
+    <o-wrapper any-1-width="25%" href="/oeffnungszeiten.html">
+        <a-picture namespace="picture-scale-up-" picture-load
             defaultSource="../../../../img/Oeffnungszeiten-Hightlight-Teaser.png" alt="Öffnungszeiten"></a-picture>
-        <style>
-            :host .opening-hours-title {
-                --opening-hours-wrapper-p-font-size: 1em;
-                --opening-hours-wrapper-p-margin: 0 0 0.75em 0;
-                --opening-hours-wrapper-p-font-weight: bold;
-            }
-
-            :host .opening-hours-time {
-                --opening-hours-wrapper-p-font-size: 1.65em;
-                --opening-hours-wrapper-p-line-height: 1.2em;
-                --opening-hours-wrapper-p-font-weight: bold;
-            }
-        </style>
         <div>
-            <p class="opening-hours-title">Öffnungszeiten</p>
-            <p class="opening-hours-time">Migros & Bäckerei Schefer: Mo-Sa 8 – 19 Uhr <br />Alle Fachgeschäfte: Mo-Sa 9
-                – 19 Uhr</p>
+            <p class="bold">Öffnungszeiten</p>
+            <h2 class="line-height-one-em">Migros & Bäckerei Schefer: Mo-Sa&nbsp;8&nbsp;–&nbsp;19&nbsp;Uhr<br />Alle Fachgeschäfte: Mo-Sa&nbsp;9&nbsp;–&nbsp;19Uhr</h2>
         </div>
     </o-wrapper>
 </o-body-style>
+<div class="spacer"></div>
 <div>
-    <style>
-        :host h2 {
-            --h2-font-size:2em;
-            --h2-line-height:1.15em;
-            --h2-margin:0.75em 0 0.8em 0;
-            --h2-padding:1em 0 0 0;
-        }
-        :host h2:before {
-            width: 42px;
-            height: 7px;
-            background-color: #0060a8;
-            content: '';
-            display:block;
-            margin:14px 0;
-        }
-    </style>
-    <h2>Zürisee Center Wädenswil</h2>
+    <h1 class="title-border">Zürisee Center Wädenswil</h1>
+    <h2 class="title-border">Zürisee Center Wädenswil</h2>
+    <h3 class="title-border">Zürisee Center Wädenswil</h3>
+    <h4 class="title-border">Zürisee Center Wädenswil</h4>
+    <h5 class="title-border">Zürisee Center Wädenswil</h5>
+    <h6 class="title-border">Zürisee Center Wädenswil</h6>
     <p>Das Zürisee Center Wädenswil bietet Ihnen auf rund 7000 Quadratmetern im Bereich Wohnen und Freizeit alles, was
         einen bequemen Einkauf in unserem Center ausmacht. Selbstverständlich finden Sie im Migros-Supermarkt viel
         Frische und Qualität für Ihren täglichen Bedarf. Hier lässt man die Hektik der Grossstadt hinter sich und taucht
@@ -53,16 +29,10 @@
         und in einer Minute ab der Autobahnausfahrt. Parkplätze stehen zur Verfügung.</p>
     <p>Zürisee Center Wädenswil – einfach praktisch</p>
 </div>
-<o-wrapper namespace=wrapper- simulate-children=2>
-    <style>
-        :host {
-            --teaser-overlay-bg-color-hover-custom: #003a56;
-            --teaser-overlay-bg-color-custom: #26b4e9;
-        }
-    </style>
+<o-wrapper namespace=wrapper-teaser- simulate-children=2>
     <m-teaser namespace=teaser-overlay- href="http://www.jowa.ch">
         <figure>
-            <a-picture picture-load defaultSource="../../../../img/MV_Brunchschiff_Text_Banner_700x540px_sRGB_high.jpg"
+            <a-picture namespace="picture-teaser-" picture-load defaultSource="../../../../img/MV_Brunchschiff_Text_Banner_700x540px_sRGB_high.jpg"
                 alt="randomized image"></a-picture>
             <figcaption>
                 <h2 class=bg-color>
@@ -73,19 +43,19 @@
     </m-teaser>
 </o-wrapper>
 <o-body-style background-image="url('../../../../img/bg_holz-weiss.jpg')">
-    <o-wrapper namespace=wrapper-store-logos->
-           <a-picture namespace="store-logo-" picture-load
-                      defaultSource="../../../../img/stores/logo-migros.png" alt="Migros"></a-picture>
-           <a-picture namespace="store-logo-" picture-load
-                      defaultSource="../../../../img/stores/logo-doitgarden.png" alt="Migros"></a-picture>
-           <a-picture namespace="store-logo-" picture-load
-                      defaultSource="../../../../img/stores/logo-sxx.png" alt="Migros"></a-picture>
-           <a-picture namespace="store-logo-" picture-load
-                      defaultSource="../../../../img/stores/logo-micasa.png" alt="Migros"></a-picture>
-           <a-picture namespace="store-logo-" picture-load
-                      defaultSource="../../../../img/stores/logo-schefer.png" alt="Migros"></a-picture>
-           <a-picture namespace="store-logo-" picture-load
-                      defaultSource="../../../../img/stores/logo-qualipet.png" alt="Migros"></a-picture>
+    <o-wrapper namespace="wrapper-no-calc-column-width-" flex-nowrap-mobile no-calc-column-width>
+           <a href=#><a-picture namespace="store-logo-" picture-load
+                      defaultSource="../../../../img/stores/logo-migros.png" alt="Migros"></a-picture></a>
+           <a href=#><a-picture namespace="store-logo-" picture-load
+                      defaultSource="../../../../img/stores/logo-doitgarden.png" alt="Migros"></a-picture></a>
+           <a href=#><a-picture namespace="store-logo-" picture-load
+                      defaultSource="../../../../img/stores/logo-sxx.png" alt="Migros"></a-picture></a>
+           <a href=#><a-picture namespace="store-logo-" picture-load
+                      defaultSource="../../../../img/stores/logo-micasa.png" alt="Migros"></a-picture></a>
+           <a href=#><a-picture namespace="store-logo-" picture-load
+                      defaultSource="../../../../img/stores/logo-schefer.png" alt="Migros"></a-picture></a>
+           <a href=#><a-picture namespace="store-logo-" picture-load
+                      defaultSource="../../../../img/stores/logo-qualipet.png" alt="Migros"></a-picture></a>
 
     </o-wrapper>
 </o-body-style>
