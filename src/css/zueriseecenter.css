@@ -5,9 +5,8 @@
   * - if a component holds other components you should share the attribute namespace with its children
   */
 :root {
+  --color-disabled: #26b5e950;
   --color-hover: #26b4e9;
   --color-secondary: #003a56;
   --store-logo-img-width: min(145px, 50vw);
-  --teaser-overlay-bg-color-hover-custom: var(--color-hover);
-  --teaser-overlay-bg-color-custom: var(--color-secondary);
 }
