@@ -5,6 +5,7 @@
   * - if a component holds other components you should share the attribute namespace with its children
   */
 :root {
+  --content-width: 55%;
   --color-disabled: #26b5e950;
   --color-hover: #26b4e9;
   --color-secondary: #003a56;
