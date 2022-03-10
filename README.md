@@ -10,7 +10,7 @@ TODO:
 - [x] https://www.zueriseecenter.ch/de.html Text
 - [x] https://www.zueriseecenter.ch/de.html Nav + Search bar responsive font-size
 - [x] https://www.zueriseecenter.ch/de.html Header and Logo (hidden appear effect)
-- [x] https://www.zueriseecenter.ch/de.html / https://www.betriebsrestaurants-migros.ch/de.html / https://www.betriebsrestaurants-migros.ch/de/nachhaltigkeit.html EmotionPicture.js; only shuffle when multiple img, text with .bg-color
+- [ ] https://www.zueriseecenter.ch/de.html / https://www.betriebsrestaurants-migros.ch/de.html / https://www.betriebsrestaurants-migros.ch/de/nachhaltigkeit.html EmotionPicture.js; font-size h1 custom, picture-load event, text with .bg-color wrapper div
 - [ ] https://www.zueriseecenter.ch/de.html Footer
 - [ ] all Demo Pages
 - [ ] google map
