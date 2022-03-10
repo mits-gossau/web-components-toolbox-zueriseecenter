@@ -11,6 +11,7 @@ TODO:
 - [x] https://www.zueriseecenter.ch/de.html Nav + Search bar responsive font-size
 - [x] https://www.zueriseecenter.ch/de.html Header and Logo (hidden appear effect)
 - [ ] https://www.zueriseecenter.ch/de.html / https://www.betriebsrestaurants-migros.ch/de.html / https://www.betriebsrestaurants-migros.ch/de/nachhaltigkeit.html EmotionPicture.js; font-size h1 & h2 custom, picture-load event, text with .bg-color wrapper div
+- [ ] --store-logo- as a template to Picture.js
 - [ ] https://www.zueriseecenter.ch/de.html Footer
 - [ ] all Demo Pages
 - [ ] google map
