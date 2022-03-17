@@ -13,7 +13,7 @@ TODO:
 - [x] --store-logo- as a template to Picture.js
 - [x] https://www.zueriseecenter.ch/de.html / https://www.betriebsrestaurants-migros.ch/de.html / https://www.betriebsrestaurants-migros.ch/de/nachhaltigkeit.html EmotionPicture.js; font-size h1 & h2 custom, picture-load event, text with .bg-color wrapper div
 - [x] https://www.zueriseecenter.ch/de.html Footer
-- [ ] google map
+- [x] google map
 - [x] toolbox font src/es/components/web-components-toolbox/src/css/fonts.css
 - [ ] Performance test regarding (re)fetch of style.css, reset.css and div. template *.css files, if this is an issue, consider a fetch controller which reacts on custom event with caching
 - [ ] all Demo Pages
