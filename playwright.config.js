@@ -5,7 +5,7 @@ const { devices } = require('@playwright/test');
 const config = {
     //forbidOnly: !!process.env.CI,
     //retries: process.env.CI ? 2 : 0,
-    timeout: 30000,
+    //timeout: 30000,
     use: {
         baseURL: 'http://localhost:4200',
         trace: 'on-first-retry',
