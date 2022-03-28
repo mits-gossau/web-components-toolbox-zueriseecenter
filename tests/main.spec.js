@@ -6,6 +6,6 @@ test('test', async({page}) =>{
     console.log(await page.locator('html > body').getAttribute('wc-config-load'));
     const wcConfigLoaded = await page.locator('html > body').getAttribute('wc-config-load')
     if(wcConfigLoaded){
-        expect(await page.screenshot({fullPage:true})).toMatchSnapshot({ maxDiffPixelRatio: 1 });
+        expect(await page.screenshot({fullPage:true})).toMatchSnapshot();
     }
 })
