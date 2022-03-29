@@ -7,7 +7,7 @@ const config = {
         baseURL: 'http://localhost:4200',
         trace: 'on-first-retry',
         headless: true,
-        //iviewport: { width: 1280, height: 720 }
+        //viewport: { width: 1280, height: 720 }
     },
     projects: [
         {
