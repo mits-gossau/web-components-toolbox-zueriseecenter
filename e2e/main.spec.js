@@ -1,9 +1,20 @@
 const { test, expect } = require('@playwright/test');
 
+test.describe.configure({ mode: 'parallel' });
+
 test.describe("snapshot test", () => {
     test.beforeEach(async ({ page, browser, context }) => {
         await page.goto('/src/es/components/web-components-toolbox/docs/Template.html?rootFolder=src&css=./src/css/variablesCustom.css&logo=./src/es/components/web-components-toolbox/src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/web-components-toolbox/src/es/components/molecules/navigation/default-/default-.html&footer=./src/es/components/web-components-toolbox/src/es/components/organisms/footer/default-/default-.html&content=./src/es/components/pages/Test.html');
+        // https://github.com/microsoft/playwright/issues/4302
+        await page.waitForTimeout(5000)
+        await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+        // await page.evaluate(() => window.scrollTo(0, 0));
+        await page.waitForTimeout(5000)
+        await page.screenshot({ path: `./e2e/toolbox.png`, fullPage: true });
+
+
     })
+   
     //test.use({ viewport: { width: 600, height: 900 } });
     // test.beforeEach(async ({ page, browser, context }) => {
     //     await page.goto('/src/es/components/web-components-toolbox/docs/Template.html?rootFolder=src&css=./src/css/variablesCustom.css&logo=./src/es/components/web-components-toolbox/src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/web-components-toolbox/src/es/components/molecules/navigation/default-/default-.html&footer=./src/es/components/web-components-toolbox/src/es/components/organisms/footer/default-/default-.html&content=./src/es/components/pages/Test.html');
@@ -14,16 +25,42 @@ test.describe("snapshot test", () => {
     // });
 
     // test('take snapshot', async ({ page }) => {
-    //     expect(await page.screenshot({ fullPage: true, animations: 'disabled' })).toMatchSnapshot("toolbox.png");
+    //     expect(await page.screenshot({ fullPage: true, animations: 'disabled' }))
     // });
 
     // text
     test('take snapshot', async ({ page }) => {
-        page.once('load', () => console.log('Page loaded!'));
-        await page.waitForSelector('body')
-        const domBody = await page.$("body")
-        //await page.evaluate(() => await domBody.getAttribute('wc-config-load'));
-        //console.log("x0x",domBody.getAttribute('wc-config-load'));
+        // await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+        // await page.waitForTimeout(5000) 
+        // await page.evaluate(() => window.scrollTo(0, 0));
+        // await page.waitForTimeout(5000) 
+        // await page.screenshot({ path: './e2e/toolbox.png', fullPage: true});
+        await page.waitForTimeout(5000)
+        expect(await page.screenshot({ fullPage: true })).toMatchSnapshot();
+
+        // const handle = await page.evaluateHandle(() => ({ window, document }));
+        // const properties = await handle.getProperties();
+        // const windowHandle = properties.get('window');
+        // const documentHandle = properties.get('document');
+        // console.log(documentHandle.asElement());
+
+
+        // page.once('load', () => console.log('Page loaded!'));
+        // await page.waitForSelector('body')
+        // const domBody = await page.$("body")
+        // //await page.evaluate(() => await domBody.getAttribute('wc-config-load'));
+
+        // if (await domBody.getAttribute('wc-config-load')) {
+        //     const handle = await page.evaluateHandle(() => ({window, document}));
+        //     const properties = await handle.getProperties();
+        //     const windowHandle = properties.get('window');
+        //     const documentHandle = properties.get('document');
+        //     console.log(documentHandle.asElement());
+
+        //     // await page.evaluate(() => window.scrollTo(0, Number.MAX_SAFE_INTEGER));
+        //     // await page.screenshot({ path: './e2e/toolbox.png', fullPage: true, animations: 'disabled' });
+        // }
+        //expect(await page.screenshot({ fullPage: true, animations: 'disabled' })).toMatchSnapshot("toolbox.png");
         // for await (const bo of domBody){
         //     console.log("x0x",await bo.getAttribute('wc-config-load'));
         //     const loaded = await bo.getAttribute('wc-config-load')
