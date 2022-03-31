@@ -11,6 +11,6 @@ test.beforeEach(async ({ page }) => {
     }
 })
 
-test('test', async ({ page }) => {
+test('test desktop version', async ({ page }) => {
     expect(await page.screenshot({ fullPage: true })).toMatchSnapshot('./e2e/master.png');
 });
