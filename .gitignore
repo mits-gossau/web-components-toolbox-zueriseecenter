@@ -17,4 +17,4 @@ Thumbs.db
 
 #Misc
 playwright-report
-/e2e/test-results
+e2e/test-results
