@@ -7,10 +7,21 @@ test.beforeEach(async ({ page }) => {
     const domBody = await page.$("body")
     if (await domBody.getAttribute('wc-config-load')) {
         await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-        await page.screenshot({ path: `./e2e/master.png`, fullPage: true });
+        await page.screenshot({ path: `./e2e/master_desktop.png`, fullPage: true });
+        await page.waitForTimeout(5000)
+        // mobile
+        // await page.setViewportSize({ width: 600, height: 1200 });
+        // await page.waitForTimeout(5000)
+        // await page.screenshot({ path: `./e2e/master_mobile.png`, fullPage: true });
     }
 })
 
 test('test desktop version', async ({ page }) => {
-    expect(await page.screenshot({ fullPage: true })).toMatchSnapshot('./e2e/master.png');
+    expect(await page.screenshot({ fullPage: true })).toMatchSnapshot('./e2e/master_desktop.png');
 });
+
+// test('test mobile version', async ({ page }) => {
+//     await page.setViewportSize({ width: 600, height: 1200 });
+//     await page.waitForTimeout(5000)
+//     expect(await page.screenshot({ fullPage: true })).toMatchSnapshot('./e2e/master_mobile.png');
+// });
