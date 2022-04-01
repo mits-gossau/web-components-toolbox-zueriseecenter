@@ -15,5 +15,5 @@ TODO:
 - [x] https://www.zueriseecenter.ch/de.html Footer
 - [x] google map
 - [x] toolbox font src/es/components/web-components-toolbox/src/css/fonts.css
-- [ ] Performance test regarding (re)fetch of style.css, reset.css and div. template *.css files, if this is an issue, consider a fetch controller which reacts on custom event with caching
-- [ ] all Demo Pages
+- [x] Performance test regarding (re)fetch of style.css, reset.css and div. template *.css files, if this is an issue, consider a fetch controller which reacts on custom event with caching
+- [x] all Demo Pages
