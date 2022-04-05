@@ -5,7 +5,8 @@
   "main": "./index.html",
   "scripts": {
     "fix": "standard --fix",
-    "serve": "live-server --port=4200 --host=localhost --no-css-inject"
+    "serve": "live-server --port=4200 --host=localhost --no-css-inject",
+    "test": "npx playwright test --config=src/es/components/web-components-toolbox/e2e/"
   },
   "author": "weedshaker@gmail.com, edx.mgb@gmail.com",
   "license": "MIT",
